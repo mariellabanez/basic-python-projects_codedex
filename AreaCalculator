@@ -1,0 +1,33 @@
+print("-------------------------")
+print("|     Area Calculator    |")
+print("-------------------------")
+
+print("Pick an Area to Calculate")
+print("1. Square")
+print("2. Rectangle")
+print("3. Triangle")
+print("4. Circle")
+
+shape = int(input("Input your number: "))
+
+if shape == 1:
+    side = int(input("Place a value for the square: " ))
+    area = side ** 2
+    print(f"The area of a square is: {area}")
+elif shape == 2:
+    length = int(input("Value for length: "))
+    width = int(input("Value for width: "))
+    area = length * width
+    print(f"The area of rectangle is: {area}")
+elif shape == 3:
+    base = int(input("Value for base: "))
+    height = int(input("Value for height: "))
+    area = (height*base)/2
+    print(f"The area of a triangle is: {area}")
+elif shape == 4:
+    radius = float(input("Value for radius: "))
+    pi = 3.14
+    area = pi * radius ** 2
+    print(f"Area of a circle is: {area}")
+else:
+    print("Invalid")
