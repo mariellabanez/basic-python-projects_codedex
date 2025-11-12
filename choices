@@ -1,0 +1,25 @@
+def kpop_choice(i):
+    if i == 1:
+        return "FAMOUS by All Day Project"
+    elif i == 2:
+        return "Jellyous by Illit"
+    elif i == 3:
+        return "What you Want by Cortis"
+    elif i == 4:
+        return "XOXZ by IVE"
+    elif i == 5:
+        return "If you wanna by WONHO"
+    else:
+        return "INVALID"
+    
+def menu():
+    print("Welcome to the Kpop Alley")
+    print("Song choices for today:")
+    print("1. FAMOUS by All Day Project")
+    print("2. Jellyous by Illit")
+    print("3. What you want by Cortis")
+    print("4. XOXZ by IVE")
+    print("5. If you wanna by WONHO")
+
+option = int(input("Select your song choice for the day: "))
+print("Now Playing: " ,kpop_choice(option))
